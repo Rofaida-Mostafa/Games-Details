@@ -1,0 +1,323 @@
+* {
+    padding: 0;
+
+    margin: 0 !important;
+    box-sizing: border-box;
+    font-family: "Comfortaa", cursive !important;
+    font-weight: 400;
+    color: white !important;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none !important;
+
+}
+
+body {
+    background-color: #272B30;
+
+}
+
+@media (max-width:950px) {
+    .uls {
+        position: absolute;
+        top: 65px;
+        background-color: #3A497B;
+        padding: 10px;
+        width: 100% !important;
+        left: 0px;
+        display: none;
+        justify-content: center;
+
+    }
+
+    ul {
+        flex-direction: column;
+        display: flex;
+
+    }
+
+    nav {
+        width: 100% !important;
+        border-radius: 20px 20px 0 0px !important;
+    }
+
+
+    .hamburger {
+        display: block !important;
+        height: 30px;
+        width: 30px;
+        margin-left: -30px !important;
+
+    }
+
+    .hamburger button {
+        margin-left: -30px !important;
+        margin-top: 6px !important;
+    }
+
+    .hamburger span.bar {
+        color: beige !important;
+        background-color: #ddd !important;
+
+
+    }
+
+    .hamburger button:focus {
+        border: 3px solid rgb(16, 16, 16);
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+/* ----------------------------------- */
+
+nav {
+    z-index: 22;
+    background-color: #3A497B;
+    width: 85%;
+    left: 8vw;
+    border-radius: 25px;
+    position: sticky;
+    padding: 15px;
+}
+
+nav a {
+    font-size: 12px;
+}
+
+.uls {
+    position: absolute;
+    width: fit-content;
+    padding-top: 10px;
+}
+
+#home .games {
+    height: 130px;
+    background-image: url('../imgs/wraper.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.logo img {
+    max-width: 40px;
+
+}
+
+img {
+    filter: grayscale(80%);
+    border-radius: 7px !important;
+    transition: all 1s;
+}
+
+
+#details2 img {
+    filter: none;
+}
+
+.card:hover img {
+    filter: none;
+    transition: all 1s;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+.card {
+    background-color: #272B30;
+    border: 1px solid #1d1f21;
+    padding: 0px !important;
+    transition: all 1s;
+    /* width: 700px; */
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
+
+.card-footer {
+    background-color: #272B2F;
+    border: 1px solid #1b1d1f;
+    margin: 0;
+    padding: 10px 0px !important;
+}
+
+p.card-text {
+    color: #939598 !important;
+}
+
+
+h5 {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.logo h5 {
+    font-size: 20px;
+}
+
+.text-footer p {
+    width: fit-content;
+    background-color: #32383e;
+    padding: 4px;
+}
+
+.text-footer button {
+    background-color: #455280;
+    padding: 2px 5px;
+    border-radius: 6px;
+    border-color: transparent;
+}
+
+.card:hover .text-footer button,
+.card:hover .text-footer a {
+    background-color: RGBA(13, 110, 253, 1);
+    color: #fff !important;
+}
+
+
+/* ===>=====>======>====>===> details style ===>=====>======>====>===> */
+
+.details {
+    height: 70vh;
+
+    /* max-width: 1560px; */
+}
+
+.details img {
+
+    width: 500px;
+}
+
+.text {
+    margin: 0;
+}
+
+.text h4 {
+    font-size: 28px;
+}
+
+
+#close .btn-close {
+    /* margin-top: 15px !important; */
+    background-color: #C8C9C9;
+    color: #C8C9C9 !important;
+    cursor: pointer;
+}
+
+.detaile-title {
+    margin-top: -70px !important;
+}
+
+.show {
+    width: fit-content;
+    background-color: #272B30;
+    border: 1px solid #FFC107;
+    border-radius: 6px;
+    padding: 5px;
+    color: rgb(248, 233, 233);
+    font-weight: 900;
+    line-height: 24px;
+    font-size: 14px;
+
+}
+
+.show:hover {
+    background-color: #FFC107;
+    color: rgb(255, 255, 255) !important;
+}
+
+p {
+    font-weight: 900;
+
+}
+
+p.long {
+    width: 100%;
+    /* min-width: 440px; */
+
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    position: relative;
+
+}
+
+
+h4 {
+    font-family: "Nerko One", cursive;
+    font-weight: 500;
+    line-height: 31px;
+    font-size: 24px;
+
+}
+
+span {
+    font-size: 14px;
+    background-color: #0DCAF0;
+    color: #000 !important;
+    font-weight: 900;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
+/* ===>=====>======>====>===> loader ===>=====>======>====>===> */
+
+#loader-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #ddd;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    background-color: #929191;
+
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
